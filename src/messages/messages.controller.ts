@@ -10,7 +10,7 @@ export class MessagesController {
 
     @Get()
     listMessages() {
-
+        return 'List of messages'
     }
 
     @Post()
