@@ -1,3 +1,3 @@
 export type BodyContent = {
-    contento: string
+    content: string
 }
