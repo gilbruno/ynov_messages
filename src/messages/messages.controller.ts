@@ -5,10 +5,7 @@ import { MessagesService } from './messages.service';
 @Controller('messages')
 export class MessagesController {
 
-    messagesService: MessagesService
-
-    constructor() {
-        this.messagesService = new MessagesService()
+    constructor(public messagesService: MessagesService ) {        
     }
 
     @Get('/:id')
@@ -17,6 +14,7 @@ export class MessagesController {
         if (!message) {
             throw new NotFoundException(`Message with id ${id} not found`)
         }
+        return message
     }
 
     @Get()

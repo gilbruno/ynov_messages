@@ -3,7 +3,7 @@
 GET http://localhost:3000/messages
 
 ### GET 1 MESSAGE
-GET http://localhost:3000/messages/294
+GET http://localhost:3000/messages/2
 
 ### CREATE MESSAGE
 POST http://localhost:3000/messages 
